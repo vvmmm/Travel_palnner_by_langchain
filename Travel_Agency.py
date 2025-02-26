@@ -27,9 +27,8 @@ chain = chat_prompt_template | chat_model | parser
 #LOGIC 5: ASK to user for input
 
 import streamlit as st
-st.logo(image, size="medium", link="https://marketplace.canva.com/EAFvvrEdW20/1/0/1600w/canva-blue-and-yellow-illustrative-travel-agency-logo-TWAjs1N3SXo.jpg", icon_image=None)
 
-st.title("~~ Mehta Travel Planner ~~")
+st.title(":tophat: Mehta Travel Planner ~~")
 source=st.text_area(label="Source:",placeholder="Enter Your Source...")
 destination=st.text_area(label="Destination:",placeholder="Enter Your Destination...")
 date=st.text_area(label="Date:",placeholder="Enter Your Journey Destination...")
