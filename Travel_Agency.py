@@ -2,7 +2,7 @@
 from langchain_core.prompts import ChatPromptTemplate
 
 chat_prompt_template= ChatPromptTemplate(
-    messages=[("system","You act As a helpful AI Assistant for a travel agency. which help to find the flight, railway or bus bookings from source to destination. also give list of all available plan for travel in the form of table by mentioning all required details about the trip cost and facilities in detailed manner and etc."),
+    messages=[("system","You act As a helpful AI Assistant for a travel agency. which help to find the flight, railway or bus bookings from source to destination. also give list of all available plan for travel in the form of table by mentioning all required details about the trip cost and facilities in detailed manner and etc.list all the available fligts,railway and bus."),
               ("human","Book a flight from {source} to {destination}.On date {date} .Have {passengers} no. of passengers. Dont ask any more informations. just give list of all available flights,railways and bus.")],
     partial_variables={"source":"ABD","destination":"HYB","passengers":1}
 )
@@ -37,8 +37,6 @@ passengers=st.number_input(label=":blond-haired-man: No. Of Passengers:",min_val
 btn_click=st.button("Find A Trip Plan Availibility")
 raw_input={"source":source,"destination":destination,"date":date,"passengers":passengers}
 if btn_click==True:
-    if source==True and destination==True and date==True and passengers==True:
-        st.write(chain.invoke(raw_input))
-    else:
-        st.text("Please fullfill all the above required details to get journey plan....")
+    
+    st.write(chain.invoke(raw_input))
     
