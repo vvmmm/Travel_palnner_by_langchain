@@ -34,3 +34,4 @@ langchain_google_genai==2.0.11  # Removed extra space
 streamlit==1.19.0
 requests==2.28.1
 google-api-python-client==2.77.0
+google-api-core==2.8.2
