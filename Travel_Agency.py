@@ -32,7 +32,7 @@ st.title(":tophat: AI Based Travel Planner")
 source=st.text_input(label=":earth_asia:Source:",placeholder="Enter Your Source...")
 destination=st.text_input(label=":earth_asia:Destination:",placeholder="Enter Your Destination...")
 date=st.date_input(label=":calendar:Date:",value=None )
-passengers=st.number_input(label=":boy:No. Of Passengers:",min_value=1, max_value=10, value=1, step=1,placeholder="Enter No. Of Passengers...")
+passengers=st.number_input(label=":guardsman:No. Of Passengers:",min_value=1, max_value=10, value=1, step=1,placeholder="Enter No. Of Passengers...")
 
 btn_click=st.button("Find A Trip Plan Availibility")
 raw_input={"source":source,"destination":destination,"date":date,"passengers":passengers}
