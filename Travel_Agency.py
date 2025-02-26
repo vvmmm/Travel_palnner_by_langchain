@@ -40,5 +40,5 @@ if btn_click==True:
     if source==True and destination==True and date==True and passengers==True:
         st.write(chain.invoke(raw_input))
     else:
-        st.write("Please fullfill all the above required details to get journey plan....")
+        st.text("Please fullfill all the above required details to get journey plan....")
     
