@@ -12,7 +12,7 @@ chat_prompt_template= ChatPromptTemplate(
 #LOGIC 2 : chat_model
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-chat_model=ChatGoogleGenerativeAI(google_api_key="AIzaSyC1B3zDW4G19olwgTz368YgS-ZARqzsEFE",model="gemini-2.0-flash-exp",temperature=1)
+chat_model=ChatGoogleGenerativeAI(google_api_key="AIzaSyD-4SosSoWbDQ8BNEzX3JLSts0r9A-Lbwk",model="gemini-2.0-flash-exp",temperature=1)
 
 
 # LOGIC 3 : output_parsers
